@@ -11,7 +11,7 @@
 <script type="text/javascript">
     $(function(){
         $('#sub').on('click', function(){
-            $.get('http:://localhost:8080', {'number':$("#numbers").val()}, function(data){
+            $.get('/', {'number':$("#numbers").val()}, function(data){
                 $('#result').html(data)
             })
         })
